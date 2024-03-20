@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tatsuhirot/react-portfolio/static/css/main.db6f0745.chunk.css",
+    "main.js": "/tatsuhirot/react-portfolio/static/js/main.0c852df0.chunk.js",
+    "main.js.map": "/tatsuhirot/react-portfolio/static/js/main.0c852df0.chunk.js.map",
+    "runtime-main.js": "/tatsuhirot/react-portfolio/static/js/runtime-main.824690f4.js",
+    "runtime-main.js.map": "/tatsuhirot/react-portfolio/static/js/runtime-main.824690f4.js.map",
+    "static/css/2.d64471e2.chunk.css": "/tatsuhirot/react-portfolio/static/css/2.d64471e2.chunk.css",
+    "static/js/2.e34d99dd.chunk.js": "/tatsuhirot/react-portfolio/static/js/2.e34d99dd.chunk.js",
+    "static/js/2.e34d99dd.chunk.js.map": "/tatsuhirot/react-portfolio/static/js/2.e34d99dd.chunk.js.map",
+    "index.html": "/tatsuhirot/react-portfolio/index.html",
+    "precache-manifest.34188fb76572a0fa38a1c70602fe84dc.js": "/tatsuhirot/react-portfolio/precache-manifest.34188fb76572a0fa38a1c70602fe84dc.js",
+    "service-worker.js": "/tatsuhirot/react-portfolio/service-worker.js",
+    "static/css/2.d64471e2.chunk.css.map": "/tatsuhirot/react-portfolio/static/css/2.d64471e2.chunk.css.map",
+    "static/css/main.db6f0745.chunk.css.map": "/tatsuhirot/react-portfolio/static/css/main.db6f0745.chunk.css.map",
+    "static/js/2.e34d99dd.chunk.js.LICENSE.txt": "/tatsuhirot/react-portfolio/static/js/2.e34d99dd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.824690f4.js",
+    "static/css/2.d64471e2.chunk.css",
+    "static/js/2.e34d99dd.chunk.js",
+    "static/css/main.db6f0745.chunk.css",
+    "static/js/main.0c852df0.chunk.js"
+  ]
+}
