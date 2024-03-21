@@ -1,6 +1,6 @@
 {
   "name": "react-portfolio",
-  "homepage": "https://tatsuhirot.github.io/react-frontend-dev-portfolio/",
+  "homepage": "https://tatsuhirot.github.io/react-portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
