@@ -98,7 +98,8 @@
           ".NET Core",
           "SignalR",
           "Angular Material"
-        ]
+        ],
+        "icon": "fas fa-briefcase"
       },
       {
         "company": "Serros Solutions",
@@ -113,13 +114,12 @@
           "PHP",
           "JavaScript",
           "DHTMLX Gantt"
-        ]
-      }
-    ],
-    "education": [
+        ],
+        "icon": "fas fa-briefcase"
+      },
       {
-        "organization": "Tokyo University of Marine Science and Technology",
-        "degree": "Master of Engineering",
+        "company": "Tokyo University of Marine Science and Technology",
+        "title": "Master of Engineering",
         "years": "04.2022 - 03.2024",
         "mainTech": [
           "Control Systems",
@@ -135,8 +135,8 @@
         "icon": "fas fa-graduation-cap"
       },
       {
-        "organization": "Korea Maritime and Ocean University",
-        "degree": "Exchange Program: Master of Engineering",
+        "company": "Korea Maritime and Ocean University",
+        "title": "Exchange Program: Master of Engineering",
         "years": "03.2023 - 07.2023",
         "mainTech": [
           "Control Systems",
@@ -150,8 +150,8 @@
         "icon": "fas fa-sync-alt"
       },
       {
-        "organization": "National Fisheries University",
-        "degree": "Bachelor of Fisheries",
+        "company": "National Fisheries University",
+        "title": "Bachelor of Fisheries",
         "years": "04.2018 - 03.2022",
         "mainTech": [
           "Fisheries",
