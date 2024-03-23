@@ -21,14 +21,10 @@ class Skills extends Component {
   }
 
   render() {
-    let sectionName;
-    let knowledge = [];
-    let programmingSkills = [];
-
     if (this.props.sharedSkills && this.props.resumeBasicInfo) {
-      sectionName = this.props.resumeBasicInfo.section_name.skills;
-      knowledge = this.renderSkillsByCategory('knowledge');
-      programmingSkills = this.renderSkillsByCategory('programming');
+      var sectionName = this.props.resumeBasicInfo.section_name.skills;
+      var knowledge = this.renderSkillsByCategory('knowledge');
+      var programmingSkills = this.renderSkillsByCategory('programming');
     }
 
     return (
@@ -39,23 +35,16 @@ class Skills extends Component {
               <span className="text-white">{sectionName}</span>
             </h1>
           </div>
-          <div className="col-md-12 text-center">
-            {knowledge.length > 0 && (
-              <>
-                <h2 className="subsection-title">
-                  <span className="text-white">Knowledge</span>
-                </h2>
-                <ul className="list-inline mx-auto skill-icon">{knowledge}</ul>
-              </>
-            )}
-            {programmingSkills.length > 0 && (
-              <>
-                <h2 className="subsection-title">
-                  <span className="text-white">Programming Skills</span>
-                </h2>
-                <ul className="list-inline mx-auto skill-icon">{programmingSkills}</ul>
-              </>
-            )}
+          <div className="col-md-12 text-center">     
+              <h2 className="subsection-title">
+                <span className="text-white">Knowledge</span>
+              </h2>
+              <ul className="list-inline mx-auto skill-icon">{knowledge}</ul>
+
+              <h2 className="subsection-title">
+                <span className="text-white">Programming Skills</span>
+              </h2>
+              <ul className="list-inline mx-auto skill-icon">{programmingSkills}</ul>
           </div>
         </div>
       </section>
