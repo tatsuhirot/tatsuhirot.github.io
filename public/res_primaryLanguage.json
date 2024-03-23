@@ -13,7 +13,7 @@
     "projects": [
       {
         "title": "Ship-Rolling Control",
-        "startDate": "2020",
+        "startDate": "2024",
         "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
         "images": [
           "images/portfolio/animal-shelter/p1.jpg",
@@ -22,22 +22,22 @@
         "url": "",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-python-plain",
+            "name": "Python"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "class": "devicon-pytorch-plain",
+            "name": "PyTorch"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-matlab-plain",
+            "name": "MATLAB"
           }
         ]
       },
       {
-        "title": "Fishes Catch Viewer",
-        "startDate": "2018",
+        "title": "Ship Operation Viewer",
+        "startDate": "2023",
         "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
         "images": [
           "images/portfolio/photography/p1.jpg",
@@ -46,18 +46,14 @@
         "url": "https://github.com",
         "technologies": [
           {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "class": "devicon-python-plain",
+            "name": "Python"
           }
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
+        "title": "Fishes Catch Viewer",
+        "startDate": "2022",
         "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
         "images": [
           "images/portfolio/adventure/p1.jpg",
@@ -66,24 +62,20 @@
         "url": "https://github.com",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-r-plain",
+            "name": "R"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
           }
         ]
       }
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
+        "company": "Mitsui E&S Shipbuilding Co., Ltd.",
+        "title": "Hardware Developer",
         "years": "04.2024 - present",
         "mainTech": [
           "Python"
@@ -91,7 +83,7 @@
         "technologies": [
           "Python"
         ],
-        "icon": "fas fa-briefcase"
+        "icon": "fas fa-ship"
       },
       {
         "company": "NPO Marine Technologist.",
@@ -104,7 +96,7 @@
           "Python",
           "Excel"
         ],
-        "icon": "fas fa-briefcase"
+        "icon": "fas fa-chart-bar"
       },
       {
         "company": "Tokyo University of Marine Science and Technology",
@@ -148,7 +140,9 @@
           "Seamanship"
         ],
         "technologies": [
-          "R"
+          "R",
+          "JavaScript",
+          "Python"
         ],
         "icon": "fas fa-graduation-cap"
       }

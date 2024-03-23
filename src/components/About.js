@@ -1,8 +1,4 @@
 import React, { Component } from "react";
-import { Icon } from "@iconify/react";
-import pythonIcon from "@iconify/icons-logos/python";
-import reactIcon from "@iconify/icons-logos/react";
-import pytorchIcon from "@iconify/icons-logos/pytorch";
 
 class About extends Component {
   render() {
@@ -30,18 +26,9 @@ class About extends Component {
                     src={profilepic}
                     alt="Avatar placeholder"
                   />
-                  <Icon
-                    icon={pythonIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={reactIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={pytorchIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
+                  <span className="iconify title-icon" data-icon="carbon:network-4" data-inline="false" style={{ fontSize: '50px', margin: "9% 5% 0 5%"}}></span>
+                  <span className="iconify title-icon" data-icon="logos:python" data-inline="false" style={{ fontSize: '50px', margin: "9% 5% 0 5%"}}></span>
+                  <span className="iconify title-icon" data-icon="logos:pytorch-icon" data-inline="false" style={{ fontSize: '50px', margin: "9% 5% 0 5%"}}></span>       
                 </span>
               </div>
             </div>
