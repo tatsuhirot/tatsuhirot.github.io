@@ -1,7 +1,7 @@
 {
   "basic_info": {
     "name": "Tatsuhiro Terada",
-    "titles": [ "Ship Monitoring Systems Expert", "Maritime Data Analyst", "Ship Control Systems Engineer"],
+    "titles": [ "Maritime Systems Expert", "Control Systems Engineer", "Maritime Data Analyst"],
     "social": [
       {
         "name": "github",
@@ -17,68 +17,73 @@
     "image": "myProfile.jpg"
   },
   "skills": {
-    "technical": {
-      "icons": [
-        {
-          "name": "Ship Navigation",
-          "class": "fas fa-dharmachakra",
-          "level": "100"
-        },
-        {
-          "name": "Naval Architecture",
-          "class": "fas fa-ship",
-          "level": "100"
-        },
-        {
-          "name": "Industrial Fishing",
-          "class": "fas fa-fish",
-          "level": "100"
-        },
-        {
-          "name": "Machine Learning",
-          "class": "fas fa-brain",
-          "level": "70"
-        },
-        {
-          "name": "Data Visualization",
-          "class": "fas fa-chart-bar",
-          "level": "100"
-        }
-      ]
-    },
-    "programming": {
-      "icons": [
-        {
-          "name": "Python",
-          "class": "fab fa-python",
-          "level": "60"
-        },
-        {
-          "name": "HTML 5",
-          "class": "fab fa-html5",
-          "level": "95"
-        },
-        {
-          "name": "CSS 3",
-          "class": "fab fa-css3-alt",
-          "level": "95"
-        },
-        {
-          "name": "React",
-          "class": "fab fa-react",
-          "level": "90"
-        },
-        {
-          "name": "JavaScript",
-          "class": "fab fa-js",
-          "level": "70"
-        },
-        {
-          "name": "R",
-          "class": "fab fa-r-project",
-          "level": "50"
-        }
-      ]
-    }
-  }
+    "icons": [
+      {
+        "name": "Ship Navigation",
+        "class": "fas fa-dharmachakra",
+        "level": "70",
+        "category": "knowledge"
+      },
+      {
+        "name": "Naval Architecture",
+        "class": "fas fa-ship",
+        "level": "65",
+        "category": "knowledge"
+      },
+      {
+        "name": "Industrial Fishing",
+        "class": "fas fa-fish",
+        "level": "70",
+        "category": "knowledge"
+      },
+      {
+        "name": "Machine Learning",
+        "class": "fas fa-brain",
+        "level": "70",
+        "category": "knowledge"
+      },
+      {
+        "name": "Data Visualization",
+        "class": "fas fa-chart-bar",
+        "level": "80",
+        "category": "knowledge"
+      },
+      {
+        "name": "Python",
+        "class": "fab fa-python",
+        "level": "60",
+        "category": "programming"
+      },
+      {
+        "name": "HTML 5",
+        "class": "fab fa-html5",
+        "level": "95",
+        "category": "programming"
+      },
+      {
+        "name": "CSS 3",
+        "class": "fab fa-css3-alt",
+        "level": "95",
+        "category": "programming"
+      },
+      {
+        "name": "React",
+        "class": "fab fa-react",
+        "level": "90",
+        "category": "programming"
+      },
+      {
+        "name": "JavaScript",
+        "class": "fab fa-js",
+        "level": "70",
+        "category": "programming"
+      },
+      {
+        "name": "R",
+        "class": "fab fa-r-project",
+        "level": "50",
+        "category": "programming"
+      }
+  ]
+}
 }
