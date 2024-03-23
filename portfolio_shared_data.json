@@ -1,89 +1,84 @@
 {
-    "basic_info": {
-      "name": "Tatsuhiro Terada",
-      "titles": [ "Maritime Systems Expert", "Control Systems Engineer", "Maritime Data Analyst"],
-      "social": [
-        {
-          "name": "github",
-          "url": "https://github.com/tatsuhirot",
-          "class": "fab fa-github"
-        },
-        {
-          "name": "linkedin",
-          "url": "https://www.linkedin.com/in/tatsuhiroterada/",
-          "class": "fab fa-linkedin"
-        }
-      ],
-      "image": "myProfile.jpg"
-    },
-    "skills": {
+  "basic_info": {
+    "name": "Tatsuhiro Terada",
+    "titles": [ "Ship Monitoring Systems Expert", "Maritime Data Analyst", "Ship Control Systems Engineer"],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/tatsuhirot",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/tatsuhiroterada/",
+        "class": "fab fa-linkedin"
+      }
+    ],
+    "image": "myProfile.jpg"
+  },
+  "skills": {
+    "technical": {
       "icons": [
         {
           "name": "Ship Navigation",
           "class": "fas fa-dharmachakra",
-          "level": "70",
-          "category": "knowledge"
+          "level": "100"
         },
         {
           "name": "Naval Architecture",
           "class": "fas fa-ship",
-          "level": "65",
-          "category": "knowledge"
+          "level": "100"
         },
         {
           "name": "Industrial Fishing",
           "class": "fas fa-fish",
-          "level": "70",
-          "category": "knowledge"
+          "level": "100"
         },
         {
           "name": "Machine Learning",
           "class": "fas fa-brain",
-          "level": "70",
-          "category": "knowledge"
+          "level": "70"
         },
         {
           "name": "Data Visualization",
           "class": "fas fa-chart-bar",
-          "level": "80",
-          "category": "knowledge"
-        },
+          "level": "100"
+        }
+      ]
+    },
+    "programming": {
+      "icons": [
         {
           "name": "Python",
           "class": "fab fa-python",
-          "level": "60",
-          "category": "programming"
+          "level": "60"
         },
         {
           "name": "HTML 5",
           "class": "fab fa-html5",
-          "level": "95",
-          "category": "programming"
+          "level": "95"
         },
         {
           "name": "CSS 3",
           "class": "fab fa-css3-alt",
-          "level": "95",
-          "category": "programming"
+          "level": "95"
         },
         {
           "name": "React",
           "class": "fab fa-react",
-          "level": "90",
-          "category": "programming"
+          "level": "90"
         },
         {
           "name": "JavaScript",
           "class": "fab fa-js",
-          "level": "70",
-          "category": "programming"
+          "level": "70"
         },
         {
           "name": "R",
           "class": "fab fa-r-project",
-          "level": "50",
-          "category": "programming"
+          "level": "50"
         }
-    ]
+      ]
+    }
   }
 }
