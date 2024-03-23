@@ -24,7 +24,7 @@ class Skills extends Component {
     if (this.props.sharedSkills && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.skills;
       var knowledge = this.renderSkillsByCategory('knowledge');
-      var programmingSkills = this.renderSkillsByCategory('programming');
+      var programming = this.renderSkillsByCategory('programming');
     }
 
     return (
@@ -44,7 +44,7 @@ class Skills extends Component {
               <h2 className="subsection-title">
                 <span className="text-white">Programming Skills</span>
               </h2>
-              <ul className="list-inline mx-auto skill-icon">{programmingSkills}</ul>
+              <ul className="list-inline mx-auto skill-icon">{programming}</ul>
           </div>
         </div>
       </section>

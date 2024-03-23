@@ -31,7 +31,7 @@ class Education extends Component {
         });
         return (
           <VerticalTimelineElement
-            className="vertical-timeline-element--education"
+            className="vertical-timeline-element--work"
             date={education.years}
             iconStyle={{
               background: "#AE944F",
