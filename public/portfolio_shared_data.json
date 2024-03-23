@@ -5,13 +5,13 @@
       "social": [
         {
           "name": "github",
-          "url": "https://github.com/tatsuhirot",
+          "url": "https://github.com",
           "class": "fab fa-github"
         },
         {
-          "name": "linkedin",
-          "url": "https://www.linkedin.com/in/tatsuhiroterada/",
-          "class": "fab fa-linkedin"
+          "name": "instagram",
+          "url": "https://www.instagram.com",
+          "class": "fab fa-instagram"
         }
       ],
       "image": "myProfile.jpg"
