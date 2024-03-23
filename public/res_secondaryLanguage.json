@@ -116,38 +116,50 @@
     ],
     "education": [
       {
-        "company": "Tokyo University of Marine Science and Technology",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
+        "organization": "Tokyo University of Marine Science and Technology",
+        "degree": "Master of Engineering",
+        "years": "04.2022 - 03.2024",
         "mainTech": [
-          "Angular 8/9/10"
+          "Control Systems",
+          "Machine Learning",
+          "Ship Navigation",
+          "Naval Architecture"
+          
         ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
-        ]
+        "technologies": [        
+          "Python",
+          "MATLAB"          
+        ],
+        "icon": "fas fa-graduation-cap"
       },
       {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
+        "organization": "Korea Maritime and Ocean University",
+        "degree": "Exchange Program: Master of Engineering",
+        "years": "03.2023 - 07.2023",
         "mainTech": [
-          "Angular 7/8"
+          "Control Systems",
+          "Machine Learning",
+          "Logistics"
         ],
         "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
+          "Python",
+          "MATLAB"
+        ],
+        "icon": "fas fa-sync-alt"
+      },
+      {
+        "organization": "National Fisheries University",
+        "degree": "Bachelor of Fisheries",
+        "years": "04.2018 - 03.2022",
+        "mainTech": [
+          "Fisheries",
+          "Ship Navigation",
+          "Seamanship"
+        ],
+        "technologies": [
+          "R"
+        ],
+        "icon": "fas fa-graduation-cap"
       }
     ]
   }

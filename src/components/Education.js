@@ -10,10 +10,10 @@ class Education extends Component {
   render() {
     if (this.props.resumeEducation && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.education;
-      var work = this.props.resumeEducation.map(function (work, i) {
-        const technologies = work.technologies;
-        const mainTechnologies = work.mainTech;
-        const iconName = work.icon;
+      var education = this.props.resumeEducation.map(function (education, i) {
+        const technologies = education.technologies;
+        const mainTechnologies = education.mainTech;
+        const iconName = education.icon;
 
         var mainTech = mainTechnologies.map((technology, i) => {
           return (
@@ -24,15 +24,15 @@ class Education extends Component {
         });
         var tech = technologies.map((technology, i) => {
           return (
-            <Badge pill className="education-badge mr-2 mb-2" key={i}>
+            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
               {technology}
             </Badge>
           );
         });
         return (
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date={work.years}
+            className="vertical-timeline-element--education"
+            date={education.years}
             iconStyle={{
               background: "#AE944F",
               color: "#fff",
@@ -49,13 +49,13 @@ class Education extends Component {
               className="vertical-timeline-element-title"
               style={{ textAlign: "left" }}
             >
-              {work.degree}
+              {education.degree}
             </h3>
             <h4
               className="vertical-timeline-element-subtitle"
               style={{ textAlign: "left" }}
             >
-              {work.organization}
+              {education.organization}
             </h4>
             <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
           </VerticalTimelineElement>
@@ -64,7 +64,7 @@ class Education extends Component {
     }
 
     return (
-      <section id="resume-education" className="pb-5">
+      <section id="portfolio" className="pb-5">
         <div className="col-md-12 mx-auto">
           <div className="col-md-12">
             <h1 className="section-title" style={{ color: "black" }}>
@@ -76,7 +76,7 @@ class Education extends Component {
         </div>
         <div className="col-md-8 mx-auto">
           <VerticalTimeline>
-            {work}
+            {education}
             <VerticalTimelineElement
               iconStyle={{
                 background: "#AE944F",
