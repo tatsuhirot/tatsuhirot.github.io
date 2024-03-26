@@ -8,6 +8,10 @@
         "skills": "Skills",
         "experience": "Experience",
         "education": "Education"
+      },
+      "subsection_name": {
+        "knowledge": "Knowledge",
+        "programming": "Programming"
       }
     },
     "projects": [
@@ -90,7 +94,8 @@
         "title": "Part-time Researcher",
         "years": "09.2022 - 02.2024",
         "mainTech": [
-          "Data Visualization"
+          "Data Visualization",
+          "Statistical Analysis"
         ],
         "technologies": [
           "Python",

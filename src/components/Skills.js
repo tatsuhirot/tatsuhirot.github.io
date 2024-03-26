@@ -20,36 +20,42 @@ class Skills extends Component {
       ));
   }
 
-  render() {
-    if (this.props.sharedSkills && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.skills;
-      var knowledge = this.renderSkillsByCategory('knowledge');
-      var programmingSkills = this.renderSkillsByCategory('programming');
-    }
-
-    return (
-      <section id="skills">
-        <div className="col-md-12">
-          <div className="col-md-12">
-            <h1 className="section-title">
+    renderSkillsSection(sectionName, skillsCategory) {
+      const skills = this.renderSkillsByCategory(skillsCategory);
+      if (skills.length > 0) {
+        return (
+          <div className="col-md-12 text-center">
+            <h2 className="subsection-title">
               <span className="text-white">{sectionName}</span>
-            </h1>
+            </h2>
+            <ul className="list-inline mx-auto skill-icon">{skills}</ul>
           </div>
-          <div className="col-md-12 text-center">     
-              <h2 className="subsection-title">
-                <span className="text-white">Knowledge</span>
-              </h2>
-              <ul className="list-inline mx-auto skill-icon">{knowledge}</ul>
-
-              <h2 className="subsection-title">
-                <span className="text-white">Programming Skills</span>
-              </h2>
-              <ul className="list-inline mx-auto skill-icon">{programmingSkills}</ul>
+        );
+      }
+      return null;
+    }
+  
+    render() {
+      const { resumeBasicInfo, sharedSkills } = this.props;
+      const sectionTitle = resumeBasicInfo?.section_name?.skills || '';
+      const subsections = sharedSkills?.categories || [];
+  
+      return (
+        <section id="skills">
+          <div className="col-md-12">
+            <div className="col-md-12">
+              <h1 className="section-title">
+                <span className="text-white">{sectionTitle}</span>
+              </h1>
+            </div>
+            {subsections.map(({ section_name, category }) => (
+              resumeBasicInfo?.subsection_name?.[section_name] &&
+              this.renderSkillsSection(resumeBasicInfo.subsection_name[section_name], category)
+            ))}
           </div>
-        </div>
-      </section>
-    );
+        </section>
+      );
+    }
   }
-}
-
+      
 export default Skills;
