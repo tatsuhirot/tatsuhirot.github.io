@@ -8,6 +8,10 @@
         "skills": "スキル",
         "experience": "職歴",
         "education": "学歴"
+      },
+      "subsection_name": {
+        "knowledge": "知識",
+        "programming": "プログラミング"
       }
     },
     "projects": [
@@ -74,9 +78,9 @@
     ],
     "experience": [
       {
-        "company": "Mitsui E&S Shipbuilding Co., Ltd.",
-        "title": "Hardware Developer",
-        "years": "04.2024 - present",
+        "company": "三井E&S造船株式会社",
+        "title": "正規雇用・システムエンジニア",
+        "years": "2024/04 - 現在",
         "mainTech": [
           "Python"
         ],
@@ -86,11 +90,12 @@
         "icon": "fas fa-ship"
       },
       {
-        "company": "NPO Marine Technologist.",
-        "title": "Part-time Researcher",
+        "company": "NPO法人 マリン・テクノロジスト",
+        "title": "非正規雇用・データ分析",
         "years": "09.2022 - 02.2024",
         "mainTech": [
-          "Data Visualization"
+          "データ可視化",
+          "統計分析"
         ],
         "technologies": [
           "Python",
@@ -99,14 +104,14 @@
         "icon": "fas fa-chart-bar"
       },
       {
-        "company": "Tokyo University of Marine Science and Technology",
-        "title": "Master of Engineering",
-        "years": "04.2022 - 03.2024",
+        "company": "国立大学法人 東京海洋大学",
+        "title": "修士課程・工学",
+        "years": "2022/04 - 2024/03",
         "mainTech": [
-          "Control Systems",
-          "Machine Learning",
-          "Ship Navigation",
-          "Naval Architecture"
+          "制御システム",
+          "機械学習",
+          "航海学",
+          "造船学"
           
         ],
         "technologies": [        
@@ -116,13 +121,13 @@
         "icon": "fas fa-graduation-cap"
       },
       {
-        "company": "Korea Maritime and Ocean University",
-        "title": "Exchange Program: Master of Engineering",
-        "years": "03.2023 - 07.2023",
+        "company": "大韓民国立 韓国海洋大学",
+        "title": "交換留学：修士課程・工学",
+        "years": "2023/03 - 2023/07",
         "mainTech": [
-          "Control Systems",
-          "Machine Learning",
-          "Logistics"
+          "制御システム",
+          "機械学習",
+          "ロジスティクス"
         ],
         "technologies": [
           "Python",
@@ -131,13 +136,12 @@
         "icon": "fas fa-sync-alt"
       },
       {
-        "company": "National Fisheries University",
-        "title": "Bachelor of Fisheries",
-        "years": "04.2018 - 03.2022",
+        "company": "国立研究開発法人水産研究・教育機構 水産大学校",
+        "title": "学士課程・水産学",
+        "years": "2018/04 - 2022/03",
         "mainTech": [
-          "Fisheries",
-          "Ship Navigation",
-          "Seamanship"
+          "水産学",
+          "航海学"
         ],
         "technologies": [
           "R",

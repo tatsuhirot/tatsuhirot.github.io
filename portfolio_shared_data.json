@@ -17,6 +17,16 @@
     "image": "myProfile.jpg"
   },
   "skills": {
+    "categories": [
+      { 
+        "section_name": "knowledge", 
+        "category": "knowledge" 
+      },
+      { 
+        "section_name": "programming", 
+        "category": "programming" 
+      }
+    ],
     "icons": [
       {
         "name": "Ship Navigation",
@@ -31,7 +41,7 @@
         "category": "knowledge"
       },
       {
-        "name": "Industrial Fishing",
+        "name": "Commercial Fishing",
         "class": "fas fa-fish",
         "level": "70",
         "category": "knowledge"
