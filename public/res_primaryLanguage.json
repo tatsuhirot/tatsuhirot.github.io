@@ -18,12 +18,12 @@
       {
         "title": "Ship-Rolling Control",
         "startDate": "2024",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "description": "This project was a part of my master's thesis. I've developed a control system for ship rolling stabilization. The system was based on a deep reinforcement learning that was trained on simulation data.",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/ship-rolling-control/p1.jpg",
+          "images/ship-rolling-control/p2.jpg"
         ],
-        "url": "",
+        "url": "https://github.com/tatsuhirot",
         "technologies": [
           {
             "class": "devicon-python-plain",
@@ -40,14 +40,14 @@
         ]
       },
       {
-        "title": "Ship Operation Viewer",
+        "title": "CO2 Emission Viewer",
         "startDate": "2023",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "description": "This project was a part of my research in part-time job. The purpose is to measure CO2 emissions from ships. I've developed a simple app that allows to visualize CO2 emissions data.",
         "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
+          "images/portfolio/co2-emission-viewer/p1.jpg",
+          "images/portfolio/co2-emission-viewer/p2.jpg"
         ],
-        "url": "https://github.com",
+        "url": "https://tatsuhiro-porfolio.streamlit.app/CO2_Emission_Viewer",
         "technologies": [
           {
             "class": "devicon-python-plain",
@@ -63,7 +63,7 @@
           "images/portfolio/fishing-catch-viewer/p1.jpg",
           "images/portfolio/fishing-catch-viewer/p2.jpg"
         ],
-        "url": "https://github.com",
+        "url": "https://tatsuhiro-porfolio.streamlit.app/Fishing_Catch_Viewer",
         "technologies": [
           {
             "class": "devicon-r-plain",
