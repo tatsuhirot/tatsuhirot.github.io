@@ -54,6 +54,26 @@
             "name": "Python"
           }
         ]
+      },
+      {
+        "title": "Fishing Catch Viewer",
+        "startDate": "2022",
+        "description": "One of the first apps I was working on my graduate studies in bachelor. I've created a simple app that allows to visualize fishing catch data.",
+        "images": [
+          "images/portfolio/fishing-catch-viewer/p1.jpg",
+          "images/portfolio/fishing-catch-viewer/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-r-plain",
+            "name": "R"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
       }
     ],
     "experience": [
