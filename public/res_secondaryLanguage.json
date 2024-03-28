@@ -20,8 +20,8 @@
         "startDate": "2024",
         "description": "This project was a part of my master's thesis. I've developed a control system for ship rolling stabilization. The system was based on a deep reinforcement learning that was trained on simulation data.",
         "images": [
-          "images/ship-rolling-control/p1.jpg",
-          "images/ship-rolling-control/p2.jpg"
+          "images/portfolio/ship-rolling-control/p1.jpg",
+          "images/portfolio/ship-rolling-control/p2.jpg"
         ],
         "url": "https://github.com/tatsuhirot",
         "technologies": [
