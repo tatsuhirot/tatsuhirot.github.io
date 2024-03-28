@@ -59,6 +59,12 @@
         "category": "knowledge"
       },
       {
+        "name": "Public Speaking",
+        "class": "fas fa-microphone",
+        "level": "70",
+        "category": "knowledge"
+      },
+      {
         "name": "Python",
         "class": "fab fa-python",
         "level": "60",

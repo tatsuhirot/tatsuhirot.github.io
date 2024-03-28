@@ -54,26 +54,6 @@
             "name": "Python"
           }
         ]
-      },
-      {
-        "title": "Fishes Catch Viewer",
-        "startDate": "2022",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-r-plain",
-            "name": "R"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
       }
     ],
     "experience": [
@@ -82,10 +62,12 @@
         "title": "正規雇用・システムエンジニア",
         "years": "2024/04 - 現在",
         "mainTech": [
-          "Python"
+          "サイバーセキュリティ",
+          "データベース管理"
         ],
         "technologies": [
-          "Python"
+          "PostgreSQL",
+          "Apache"
         ],
         "icon": "fas fa-ship"
       },
