@@ -1,0 +1,157 @@
+{
+  "basic_info": {
+    "description_header": "Hola",
+    "description": "👋 Soy Tatsuhiro Terada. Con una sólida base en sistemas de barcos, navegación y pesca industrial, soy un profesional marítimo dedicado a avanzar en el campo a través de la innovación y la experiencia. Mi carrera se construye sobre una comprensión integral de las operaciones marítimas, desde el análisis de datos para el cumplimiento hasta el desarrollo de herramientas sofisticadas para evaluaciones operativas. Mi trayectoria académica en ingeniería de sistemas, navegación, aprendizaje automático y arte de la marinería me ha equipado con una mezcla única de conocimientos que impulsa mis empeños profesionales.",
+    "section_name": {
+      "about": "Acerca de mí",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "experience": "Experiencia",
+      "education": "Educación"
+    },
+    "subsection_name": {
+      "knowledge": "Conocimiento",
+      "programming": "Programación"
+    }
+  },
+  "projects": [
+    {
+      "title": "Control del Balanceo del Barco",
+      "startDate": "2024",
+      "description": "Este proyecto fue parte de mi tesis de maestría. Desarrollé un sistema de control para la estabilización del balanceo del barco. El sistema se basó en un aprendizaje profundo por refuerzo que se entrenó con datos de simulación.",
+      "images": [
+        "images/portfolio/ship-rolling-control/p1.jpg",
+        "images/portfolio/ship-rolling-control/p2.jpg"
+      ],
+      "url": "https://github.com/tatsuhirot",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-pytorch-plain",
+          "name": "PyTorch"
+        },
+        {
+          "class": "devicon-matlab-plain",
+          "name": "MATLAB"
+        }
+      ]
+    },
+    {
+      "title": "Visualizador de Emisiones de CO2",
+      "startDate": "2023",
+      "description": "Este proyecto fue parte de mi investigación en un trabajo de medio tiempo. El propósito es medir las emisiones de CO2 de los barcos. Desarrollé una aplicación simple que permite visualizar los datos de emisiones de CO2.",
+      "images": [
+        "images/portfolio/co2-emission-viewer/p1.jpg",
+        "images/portfolio/co2-emission-viewer/p2.jpg"
+      ],
+      "url": "https://tatsuhiro-porfolio.streamlit.app/CO2_Emission_Viewer",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        }
+      ]
+    },
+    {
+      "title": "Visualizador de Capturas de Pesca",
+      "startDate": "2022",
+      "description": "Una de las primeras aplicaciones en las que trabajé durante mis estudios de posgrado. Creé una aplicación simple que permite visualizar los datos de capturas de pesca.",
+      "images": [
+        "images/portfolio/fishing-catch-viewer/p1.jpg",
+        "images/portfolio/fishing-catch-viewer/p2.jpg"
+      ],
+      "url": "https://tatsuhiro-porfolio.streamlit.app/Fishing_Catch_Viewer",
+      "technologies": [
+        {
+          "class": "devicon-r-plain",
+          "name": "R"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Mitsui E&S Shipbuilding Co., Ltd.",
+      "title": "Desarrollador de Hardware",
+      "years": "04.2024 - presente",
+      "mainTech": [
+        "Ciberseguridad",
+        "Gestión de Bases de Datos"
+      ],
+      "technologies": [
+        "PostgreSQL",
+        "Apache"
+      ],
+      "icon": "fas fa-ship"
+    },
+    {
+      "company": "NPO Marine Technologist.",
+      "title": "Investigador a Tiempo Parcial",
+      "years": "09.2022 - 02.2024",
+      "mainTech": [
+        "Visualización de Datos",
+        "Análisis Estadístico"
+      ],
+      "technologies": [
+        "Python",
+        "Excel"
+      ],
+      "icon": "fas fa-chart-bar"
+    },
+    {
+      "company": "Tokyo University of Marine Science and Technology",
+      "title": "Master en Ingeniería",
+      "years": "04.2022 - 03.2024",
+      "mainTech": [
+        "Sistemas de Control",
+        "Aprendizaje Automático",
+        "Navegación de Barcos",
+        "Arquitectura Naval"
+        
+      ],
+      "technologies": [        
+        "Python",
+        "MATLAB"          
+      ],
+      "icon": "fas fa-graduation-cap"
+    },
+    {
+      "company": "Korea Maritime and Ocean University",
+      "title": "Programa de Intercambio: Master en Ingeniería",
+      "years": "03.2023 - 07.2023",
+      "mainTech": [
+        "Sistemas de Control",
+        "Aprendizaje Automático",
+        "Logística"
+      ],
+      "technologies": [
+        "Python",
+        "MATLAB"
+      ],
+      "icon": "fas fa-sync-alt"
+    },
+    {
+      "company": "National Fisheries University",
+      "title": "Licenciatura en Pesquerías",
+      "years": "04.2018 - 03.2022",
+      "mainTech": [
+        "Pesquerías",
+        "Navegación de Barcos",
+        "Arte de la Marinería"
+      ],
+      "technologies": [
+        "R",
+        "JavaScript",
+        "Python"
+      ],
+      "icon": "fas fa-graduation-cap"
+    }
+  ]
+}

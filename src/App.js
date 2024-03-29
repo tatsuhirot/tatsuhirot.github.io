@@ -19,34 +19,47 @@ class App extends Component {
     };
   }
 
-  applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
-    this.swapCurrentlyActiveLanguage(oppositeLangIconId);
+  applyPickedLanguage(pickedLanguage) {
     document.documentElement.lang = pickedLanguage;
-    var resumePath =
-      document.documentElement.lang === window.$primaryLanguage
-        ? `res_primaryLanguage.json`
-        : `res_secondaryLanguage.json`;
+    this.swapCurrentlyActiveLanguage(pickedLanguage);
+  
+    var resumePath = '';
+    if (document.documentElement.lang === window.$primaryLanguage) {
+      resumePath = `res_primaryLanguage.json`;
+    } else if (document.documentElement.lang === window.$secondaryLanguage) {
+      resumePath = `res_secondaryLanguage.json`;
+    } else if (document.documentElement.lang === window.$tertiaryLanguage) { // 第三言語を考慮
+      resumePath = `res_tertiaryLanguage.json`;
+    }
+  
     this.loadResumeFromPath(resumePath);
   }
+  
 
-  swapCurrentlyActiveLanguage(oppositeLangIconId) {
-    var pickedLangIconId =
-      oppositeLangIconId === window.$primaryLanguageIconId
-        ? window.$secondaryLanguageIconId
-        : window.$primaryLanguageIconId;
-    document
-      .getElementById(oppositeLangIconId)
-      .removeAttribute("filter", "brightness(40%)");
-    document
-      .getElementById(pickedLangIconId)
-      .setAttribute("filter", "brightness(40%)");
-  }
+  swapCurrentlyActiveLanguage(pickedLanguage) {
+  var pickedLangIconId = '';
+    // 全ての言語アイコンの明るさを一度下げる
+  document.querySelectorAll('.language-icon').forEach(icon => {
+    icon.style.filter = "brightness(40%)";
+  });
+
+    if (pickedLanguage === window.$primaryLanguage) {
+      pickedLangIconId = window.$primaryLanguageIconId;
+    } else if (pickedLanguage === window.$secondaryLanguage) {
+      pickedLangIconId = window.$secondaryLanguageIconId;
+    } else if (pickedLanguage === window.$tertiaryLanguage) { // 第三言語を考慮
+      pickedLangIconId = window.$tertiaryLanguageIconId;
+    }
+  // 選択された言語アイコンの明るさを元に戻す
+  document.getElementById(pickedLangIconId).style.filter = "brightness(100%)";
+}
+
+  
 
   componentDidMount() {
     this.loadSharedData();
     this.applyPickedLanguage(
-      window.$primaryLanguage,
-      window.$secondaryLanguageIconId
+      window.$primaryLanguage
     );
   }
 
@@ -87,8 +100,7 @@ class App extends Component {
           <div
             onClick={() =>
               this.applyPickedLanguage(
-                window.$primaryLanguage,
-                window.$secondaryLanguageIconId
+                window.$primaryLanguage
               )
             }
             style={{ display: "inline" }}
@@ -103,20 +115,35 @@ class App extends Component {
           <div
             onClick={() =>
               this.applyPickedLanguage(
-                window.$secondaryLanguage,
-                window.$primaryLanguageIconId
+                window.$secondaryLanguage
+              )
+            }
+            style={{ display: "inline" }}
+          >
+            <span
+              className="iconify language-icon mr-5"
+              data-icon="twemoji-flag-for-flag-japan"
+              data-inline="false"
+              id={window.$secondaryLanguageIconId}
+            ></span>
+          </div>
+          <div
+            onClick={() =>
+              this.applyPickedLanguage(
+                window.$tertiaryLanguage
               )
             }
             style={{ display: "inline" }}
           >
             <span
               className="iconify language-icon"
-              data-icon="twemoji-flag-for-flag-japan"
+              data-icon="twemoji-flag-for-flag-spain"
               data-inline="false"
-              id={window.$secondaryLanguageIconId}
+              id={window.$tertiaryLanguageIconId}
             ></span>
           </div>
         </div>
+
         <About
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}
