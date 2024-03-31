@@ -25,11 +25,11 @@ class App extends Component {
   
     var resumePath = '';
     if (document.documentElement.lang === window.$primaryLanguage) {
-      resumePath = `res_primaryLanguage.json`;
+      resumePath = `./data/res_primaryLanguage.json`;
     } else if (document.documentElement.lang === window.$secondaryLanguage) {
-      resumePath = `res_secondaryLanguage.json`;
+      resumePath = `./data/res_secondaryLanguage.json`;
     } else if (document.documentElement.lang === window.$tertiaryLanguage) { // 第三言語を考慮
-      resumePath = `res_tertiaryLanguage.json`;
+      resumePath = `./data/res_tertiaryLanguage.json`;
     }
   
     this.loadResumeFromPath(resumePath);
@@ -79,7 +79,7 @@ class App extends Component {
 
   loadSharedData() {
     $.ajax({
-      url: `portfolio_shared_data.json`,
+      url: `./data/portfolio_shared_data.json`,
       dataType: "json",
       cache: false,
       success: function (data) {
