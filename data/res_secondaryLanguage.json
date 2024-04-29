@@ -16,14 +16,14 @@
     },
     "projects": [
       {
-        "title": "Ship-Rolling Control",
+        "title": "船舶の動揺制御",
         "startDate": "2024",
-        "description": "This project was a part of my master's thesis. I've developed a control system for ship rolling stabilization. The system was based on a deep reinforcement learning that was trained on simulation data.",
+        "description": "このプロジェクトは私の修士論文です。シミュレーションデータに基づいて訓練された深層強化学習を用いて、船舶動揺の安定化を行うための船速制御アルゴリズムを開発しました。",
         "images": [
           "images/portfolio/ship-rolling-control/p1.jpg",
           "images/portfolio/ship-rolling-control/p2.jpg"
         ],
-        "url": "https://github.com/tatsuhirot",
+        "url": "https://oacis.repo.nii.ac.jp/records/2000162",
         "technologies": [
           {
             "class": "devicon-python-plain",
@@ -40,9 +40,9 @@
         ]
       },
       {
-        "title": "CO2 Emission Viewer",
+        "title": "CO2排出量分析",
         "startDate": "2023",
-        "description": "This project was a part of my research in part-time job. The purpose is to measure CO2 emissions from ships. I've developed a simple app that allows to visualize CO2 emissions data.",
+        "description": "このプロジェクトは私がアルバイトで行った研究の一部です。船舶からのCO2排出量を測定することが目的です。CO2排出データを可視化するシンプルなアプリを開発しました。",
         "images": [
           "images/portfolio/co2-emission-viewer/p1.jpg",
           "images/portfolio/co2-emission-viewer/p2.jpg"
@@ -56,9 +56,9 @@
         ]
       },
       {
-        "title": "Fishing Catch Viewer",
+        "title": "漁獲量分析",
         "startDate": "2022",
-        "description": "One of the first apps I was working on my graduate studies in bachelor. I've created a simple app that allows to visualize fishing catch data.",
+        "description": "私が学士課程の卒業研究で取り組んだアプリです。漁獲データを可視化するシンプルなアプリを作成しました。",
         "images": [
           "images/portfolio/fishing-catch-viewer/p1.jpg",
           "images/portfolio/fishing-catch-viewer/p2.jpg"
@@ -75,7 +75,7 @@
           }
         ]
       }
-    ],
+    ],    
     "experience": [
       {
         "company": "三井E&S造船株式会社",
@@ -124,7 +124,7 @@
       },
       {
         "company": "大韓民国立 韓国海洋大学",
-        "title": "交換留学：修士課程・工学",
+        "title": "交換留学・修士課程・工学",
         "years": "2023/03 - 2023/07",
         "mainTech": [
           "制御システム",

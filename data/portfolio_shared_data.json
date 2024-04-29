@@ -30,7 +30,7 @@
     "icons": [
       {
         "name": "Ship Navigation",
-        "class": "fas fa-dharmachakra",
+        "class": "fas fa-anchor",
         "level": "70",
         "category": "knowledge"
       },
