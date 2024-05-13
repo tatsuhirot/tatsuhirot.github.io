@@ -37,7 +37,7 @@ class Header extends Component {
 
     return (
       <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
-        {/* <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
           <div className="container">
             <a className="navbar-brand" href="#">Tatsuhiro Terada</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,7 @@ class Header extends Component {
               </ul>
             </div>
           </div>
-        </nav> */}
+        </nav>
 
         <div className="row aligner" style={{ height: '100%' }}>
           <div className="col-md-12">
