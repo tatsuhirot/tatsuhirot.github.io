@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class Header extends Component {
   titles = [];
@@ -56,6 +58,9 @@ class Header extends Component {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#resume">Experience</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/blog">Blogs</a>
                 </li>
               </ul>
             </div>

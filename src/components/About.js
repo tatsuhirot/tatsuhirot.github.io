@@ -26,9 +26,13 @@ class About extends Component {
                     src={profilepic}
                     alt="Avatar placeholder"
                   />
-                  <span className="iconify title-icon" data-icon="carbon:network-4" data-inline="false" style={{ fontSize: '50px', margin: "9% 5% 0 5%"}}></span>
-                  <span className="iconify title-icon" data-icon="logos:python" data-inline="false" style={{ fontSize: '50px', margin: "9% 5% 0 5%"}}></span>
-                  <span className="iconify title-icon" data-icon="logos:pytorch-icon" data-inline="false" style={{ fontSize: '50px', margin: "9% 5% 0 5%"}}></span>       
+                  <a href="https://www.linkedin.com/in/tatsuhiroterada/" target="_blank" rel="noopener noreferrer">
+                    <span className="iconify title-icon" data-icon="logos:linkedin-icon" data-inline="false" style={{ fontSize: '50px', margin: "9% 5% 0 5%", cursor: 'pointer' }}></span>
+                  </a>
+                  <a href="https://github.com/tatsuhirot" target="_blank" rel="noopener noreferrer">
+                    <span className="iconify title-icon" data-icon="logos:github-icon" data-inline="false" style={{ fontSize: '50px', margin: "9% 5% 0 5%", cursor: 'pointer' }}></span>
+                  </a>
+                  {/* <span className="iconify title-icon" data-icon="logos:pytorch-icon" data-inline="false" style={{ fontSize: '50px', margin: "9% 5% 0 5%"}}></span> */}
                 </span>
               </div>
             </div>
@@ -72,6 +76,15 @@ class About extends Component {
                 </div>
               </div>
             </div>
+            <div className="row center mx-auto">
+            <a
+              href="path/to/your/resume.pdf"
+              className="btn btn-primary download-resume-btn"
+              download
+            >
+              Download Resume
+            </a>
+          </div>
           </div>
         </div>
       </section>

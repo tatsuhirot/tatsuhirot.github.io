@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from "jquery";
 import "./App.scss";
 import Header from "./components/Header";
@@ -7,6 +8,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+
 
 class App extends Component {
 

@@ -443,14 +443,14 @@ footer a:focus {
 
 // Navbarの背景色を黒に設定
 .navbar.navbar-expand-lg {
-	background-color: #000 !important;
+	background-color: #2bcee7 !important;
   }
   
   // ブランド名のスタイル
   .navbar-brand {
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 16.5px !important;
 	color: #fbfbfb;
   }
   
@@ -458,5 +458,51 @@ footer a:focus {
   .navbar-nav .nav-link {
 	text-transform: uppercase;
 	font-size: 16px;
-	color: #fbfbfb;
+	color: #fbfbfb !important;
+	font-weight: bold;
   }
+
+  .navbar-collapse {
+	transition: height 0.5s, opacity 0.5s;
+  }
+
+
+  
+  html {
+	scroll-behavior: smooth;
+  }
+
+
+// // メディアクエリを使用してスマホ用のスタイルを追加
+// @media (max-width: 768px) {
+// 	.navbar-collapse {
+// 	  background-color: #2bcee7; // 背景色を追加
+// 	}
+  
+// 	.navbar-nav .nav-link {
+// 	  text-align: center; // リンクを中央揃え
+// 	  padding: 10px 0; // パディングを追加
+// 	}
+//   }
+
+//  Button.scss
+
+.download-resume-btn {
+	margin-top: 10px; /* 位置を調整 */
+	background-color: #6ed3e2 !important; /* 背景色 */
+	color: #ffffff; /* テキスト色 */
+	padding: 10px 20px !important; /* ボタンの内側の余白 */
+	border-radius: 5px !important; /* 角丸 */
+	border: none !important; /* ボーダーをなくす */
+	outline: none !important;
+	font-size: 30px !important; /* フォントサイズ */
+	cursor: pointer; /* カーソルをポインターに */
+	transition: background-color 0.3s !important;
+
+  }
+  
+  .download-resume-btn:hover {
+	background-color: #6ea9e8 !important; /* ホバー時の背景色 */
+	color: #f9fcfc !important; /* ホバー時のテキスト色 */
+  }
+  
