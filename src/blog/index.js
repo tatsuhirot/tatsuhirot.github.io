@@ -23,3 +23,4 @@ const BlogIndex = () => {
 };
 
 export default BlogIndex;
+

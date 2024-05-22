@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import { Navbar, Nav } from "react-bootstrap";
 import Typical from "react-typical";
 import Switch from "react-switch";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { HashLink as Link } from "react-router-hash-link";
 
 class Header extends Component {
   titles = [];
@@ -39,33 +40,21 @@ class Header extends Component {
 
     return (
       <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <Navbar bg="primary" variant="dark" expand="lg" fixed="top">
           <div className="container">
-            <a className="navbar-brand" href="#">Tatsuhiro Terada</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
-                  <a className="nav-link" href="#about">About</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#portfolio">Projects</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#skills">Skills</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#resume">Experience</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/blog">Blogs</a>
-                </li>
-              </ul>
-            </div>
+            <Navbar.Brand as={Link} to="/">Tatsuhiro Terada</Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbarNav" />
+            <Navbar.Collapse id="navbarNav">
+              <Nav className="ml-auto">
+                <Nav.Link as={Link} to="/#about">About</Nav.Link>
+                <Nav.Link as={Link} to="/#portfolio">Projects</Nav.Link>
+                <Nav.Link as={Link} to="/#skills">Skills</Nav.Link>
+                <Nav.Link as={Link} to="/#resume">Experience</Nav.Link>
+                <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
           </div>
-        </nav>
+        </Navbar>
 
         <div className="row aligner" style={{ height: '100%' }}>
           <div className="col-md-12">
