@@ -27,11 +27,11 @@ class App extends Component {
 
     var resumePath = '';
     if (document.documentElement.lang === window.$primaryLanguage) {
-      resumePath = `./src/data/res_primaryLanguage.json`;
+      resumePath = `./data/res_primaryLanguage.json`;
     } else if (document.documentElement.lang === window.$secondaryLanguage) {
-      resumePath = `./src/data/res_secondaryLanguage.json`;
+      resumePath = `./data/res_secondaryLanguage.json`;
     } else if (document.documentElement.lang === window.$tertiaryLanguage) {
-      resumePath = `./src/data/res_tertiaryLanguage.json`;
+      resumePath = `./data/res_tertiaryLanguage.json`;
     }
 
     this.loadResumeFromPath(resumePath);
