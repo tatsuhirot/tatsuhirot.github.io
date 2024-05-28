@@ -50,7 +50,7 @@ class Header extends Component {
                 <Nav.Link as={Link} to="/#portfolio">Projects</Nav.Link>
                 <Nav.Link as={Link} to="/#skills">Skills</Nav.Link>
                 <Nav.Link as={Link} to="/#resume">Experience</Nav.Link>
-                <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+                <Nav.Link as={Link} to="/blog/#blog-section">Blog</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </div>

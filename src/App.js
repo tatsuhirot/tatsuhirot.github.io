@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from "jquery";
 import "./App.scss";
@@ -28,11 +27,11 @@ class App extends Component {
 
     var resumePath = '';
     if (document.documentElement.lang === window.$primaryLanguage) {
-      resumePath = `./data/res_primaryLanguage.json`;
+      resumePath = `./src/data/res_primaryLanguage.json`;
     } else if (document.documentElement.lang === window.$secondaryLanguage) {
-      resumePath = `./data/res_secondaryLanguage.json`;
+      resumePath = `./src/data/res_secondaryLanguage.json`;
     } else if (document.documentElement.lang === window.$tertiaryLanguage) {
-      resumePath = `./data/res_tertiaryLanguage.json`;
+      resumePath = `./src/data/res_tertiaryLanguage.json`;
     }
 
     this.loadResumeFromPath(resumePath);

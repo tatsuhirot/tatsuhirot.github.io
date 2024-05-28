@@ -2,8 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import BlogIndex from './blog/index';
 import BlogPost from './blog/[slug]';
-import Header from './components/Header'; // 必要に応じてヘッダーやフッターを含めます
-import Footer from './components/Footer';
 
 const BlogLayout = () => {
   return (
@@ -14,7 +12,6 @@ const BlogLayout = () => {
           <Route path="/:slug" element={<BlogPost />} />
         </Routes>
       </div>
-      <Footer />
     </div>
   );
 };

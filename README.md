@@ -96,3 +96,20 @@ This portfolio draws inspiration from the following work:
 
 Your feedback and inquiries are always welcome. Feel free to connect with me through my [LinkedIn profile](https://www.linkedin.com/in/your-linkedin-id/).
 
+
+- src
+    - blog/
+        - index.js
+        - BlogData.js
+        - [slug].js
+    - components/
+        - About.js
+        - Experience.js
+        - Footer.js
+        - Header.js
+        - ProjectDetailsModal.js
+        - Projects.js
+        - Skills.js
+    - App.js
+    - BlogLayout.js
+    - index.js

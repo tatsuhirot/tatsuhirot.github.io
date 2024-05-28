@@ -1,32 +1,26 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import blogPosts from './blogData';
+import './index.scss';  // Adjust the path based on your project structure
 
 const BlogPost = () => {
   let { slug } = useParams();
 
-  // サンプルブログデータ
-  const blogPosts = {
-    "first-post": {
-      title: "First Blog Post",
-      content: "This is the content of the first blog post."
-    },
-    "second-post": {
-      title: "Second Blog Post",
-      content: "This is the content of the second blog post."
-    }
-    // 他のブログ投稿もここに追加できます
-  };
-
-  const post = blogPosts[slug];
+  const post = blogPosts.find(p => p.slug === slug);
 
   if (!post) {
     return <div>Post not found</div>;
   }
 
   return (
-    <div className="blog-post">
-      <h1>{post.title}</h1>
-      <p>{post.content}</p>
+    <div className="blog-post-container">
+      <div className="blog-post text-center mb-4">
+        <h1>{post.title}</h1>
+        <p>{post.date}</p>
+        <p>{post.category}</p>
+        {post.featuredImage && <img src={post.featuredImage} alt={post.title} />}
+        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      </div>
     </div>
   );
 };
