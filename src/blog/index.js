@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './index.scss';  // Adjust the path based on your project structure
 
-const BlogIndex = ({ blogInfo, sharedData }) => {
+const BlogIndex = ({ blogInfo=[], sharedData=[] }) => {
   return (
     <section id="blog" className="blog-section">
       <div className="container">

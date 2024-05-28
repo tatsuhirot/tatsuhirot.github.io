@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import './index.scss';  // Adjust the path based on your project structure
 
-const BlogPost = ({ blogInfo, sharedData }) => {
+const BlogPost = ({ blogInfo=[], sharedData=[] }) => {
   let { slug } = useParams();
 
   const post = blogInfo.find(p => p.slug === slug);

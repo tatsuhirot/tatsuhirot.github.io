@@ -18,20 +18,22 @@ class App extends Component {
       foo: "bar",
       resumeData: {},
       sharedData: {},
+      language: window.$primaryLanguage // 現在の言語を管理する状態を追加
     };
+    this.applyPickedLanguage = this.applyPickedLanguage.bind(this);
   }
 
   applyPickedLanguage(pickedLanguage) {
     document.documentElement.lang = pickedLanguage;
     this.swapCurrentlyActiveLanguage(pickedLanguage);
 
-    var resumePath = '';
-    if (document.documentElement.lang === window.$primaryLanguage) {
-      resumePath = `./data/res_primaryLanguage.json`;
-    } else if (document.documentElement.lang === window.$secondaryLanguage) {
-      resumePath = `./data/res_secondaryLanguage.json`;
-    } else if (document.documentElement.lang === window.$tertiaryLanguage) {
-      resumePath = `./data/res_tertiaryLanguage.json`;
+    let resumePath = '';
+    if (pickedLanguage === window.$primaryLanguage) {
+      resumePath = `${process.env.PUBLIC_URL}/data/res_primaryLanguage.json`;
+    } else if (pickedLanguage === window.$secondaryLanguage) {
+      resumePath = `${process.env.PUBLIC_URL}/data/res_secondaryLanguage.json`;
+    } else if (pickedLanguage === window.$tertiaryLanguage) {
+      resumePath = `${process.env.PUBLIC_URL}/data/res_tertiaryLanguage.json`;
     }
 
     this.loadResumeFromPath(resumePath);
@@ -55,7 +57,7 @@ class App extends Component {
 
   componentDidMount() {
     this.loadSharedData();
-    this.applyPickedLanguage(window.$primaryLanguage);
+    this.applyPickedLanguage(this.state.language); // 初期言語を適用
   }
 
   loadResumeFromPath(path) {
@@ -74,7 +76,7 @@ class App extends Component {
 
   loadSharedData() {
     $.ajax({
-      url: `./data/portfolio_shared_data.json`,
+      url: `${process.env.PUBLIC_URL}/data/portfolio_shared_data.json`,
       dataType: "json",
       cache: false,
       success: function (data) {
@@ -88,50 +90,28 @@ class App extends Component {
   }
 
   render() {
+    const { resumeData, sharedData, language } = this.state;
+
     return (
       <Router>
         <div>
-          <Header sharedData={this.state.sharedData.basic_info} />
+          <Header sharedData={sharedData.basic_info} />
           <div className="col-md-12 mx-auto text-center language">
-            <div
-              onClick={() => this.applyPickedLanguage(window.$primaryLanguage)}
-              style={{ display: "inline" }}
-            >
-              <span
-                className="iconify language-icon mr-5"
-                data-icon="twemoji-flag-for-flag-united-kingdom"
-                data-inline="false"
-                id={window.$primaryLanguageIconId}
-              ></span>
+            <div onClick={() => this.applyPickedLanguage(window.$primaryLanguage)} style={{ display: "inline" }}>
+              <span className="iconify language-icon mr-5" data-icon="twemoji-flag-for-flag-united-kingdom" data-inline="false" id={window.$primaryLanguageIconId}></span>
             </div>
-            <div
-              onClick={() => this.applyPickedLanguage(window.$secondaryLanguage)}
-              style={{ display: "inline" }}
-            >
-              <span
-                className="iconify language-icon mr-5"
-                data-icon="twemoji-flag-for-flag-japan"
-                data-inline="false"
-                id={window.$secondaryLanguageIconId}
-              ></span>
+            <div onClick={() => this.applyPickedLanguage(window.$secondaryLanguage)} style={{ display: "inline" }}>
+              <span className="iconify language-icon mr-5" data-icon="twemoji-flag-for-flag-japan" data-inline="false" id={window.$secondaryLanguageIconId}></span>
             </div>
-            <div
-              onClick={() => this.applyPickedLanguage(window.$tertiaryLanguage)}
-              style={{ display: "inline" }}
-            >
-              <span
-                className="iconify language-icon"
-                data-icon="twemoji-flag-for-flag-spain"
-                data-inline="false"
-                id={window.$tertiaryLanguageIconId}
-              ></span>
+            <div onClick={() => this.applyPickedLanguage(window.$tertiaryLanguage)} style={{ display: "inline" }}>
+              <span className="iconify language-icon" data-icon="twemoji-flag-for-flag-spain" data-inline="false" id={window.$tertiaryLanguageIconId}></span>
             </div>
           </div>
           <Routes>
-            <Route path="/" element={<MainPage resumeData={this.state.resumeData} sharedData={this.state.sharedData} />} />
-            <Route path="/blog/*" element={<BlogLayout blogInfo={this.state.resumeData.blog} sharedData={this.state.sharedData} />} />
+            <Route path="/" element={<MainPage resumeData={resumeData} sharedData={sharedData} />} />
+            <Route path="/blog/*" element={<BlogLayout blogInfo={resumeData.blog} sharedData={sharedData} language={language} />} />
           </Routes>
-          <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
+          <Footer sharedBasicInfo={sharedData.basic_info} />
         </div>
       </Router>
     );
@@ -141,23 +121,10 @@ class App extends Component {
 const MainPage = ({ resumeData, sharedData }) => {
   return (
     <>
-      <About
-        resumeBasicInfo={resumeData.basic_info}
-        sharedBasicInfo={sharedData.basic_info}
-      />
-      <Projects
-        resumeProjects={resumeData.projects}
-        resumeBasicInfo={resumeData.basic_info}
-      />
-      <Skills
-        sharedSkills={sharedData.skills}
-        resumeBasicInfo={resumeData.basic_info}
-      />
-      
-      <Experience
-        resumeExperience={resumeData.experience}
-        resumeBasicInfo={resumeData.basic_info}
-      />
+      <About resumeBasicInfo={resumeData.basic_info} sharedBasicInfo={sharedData.basic_info} />
+      <Projects resumeProjects={resumeData.projects} resumeBasicInfo={resumeData.basic_info} />
+      <Skills sharedSkills={sharedData.skills} resumeBasicInfo={resumeData.basic_info} />
+      <Experience resumeExperience={resumeData.experience} resumeBasicInfo={resumeData.basic_info} />
     </>
   );
 }
