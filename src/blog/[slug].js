@@ -1,12 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import blogPosts from './blogData';
 import './index.scss';  // Adjust the path based on your project structure
 
-const BlogPost = () => {
+const BlogPost = ({ blogInfo, sharedData }) => {
   let { slug } = useParams();
 
-  const post = blogPosts.find(p => p.slug === slug);
+  const post = blogInfo.find(p => p.slug === slug);
 
   if (!post) {
     return <div>Post not found</div>;

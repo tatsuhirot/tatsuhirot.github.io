@@ -129,7 +129,7 @@ class App extends Component {
           </div>
           <Routes>
             <Route path="/" element={<MainPage resumeData={this.state.resumeData} sharedData={this.state.sharedData} />} />
-            <Route path="/blog/*" element={<BlogLayout />} />
+            <Route path="/blog/*" element={<BlogLayout blogInfo={this.state.resumeData.blog} sharedData={this.state.sharedData} />} />
           </Routes>
           <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
         </div>

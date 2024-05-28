@@ -153,5 +153,25 @@
       ],
       "icon": "fas fa-graduation-cap"
     }
+  ],
+  "blog": [  
+    {
+      "slug": "first-post",
+      "title": "最初のブログ投稿",
+      "date": "2024-01-01",
+      "category": "カテゴリー 1",
+      "featuredImage": "/path/to/image1.jpg", 
+      "excerpt": "これは最初のブログ投稿の簡単な概要です。",
+      "content": "<p>これは最初のブログ投稿の内容です。</p>"
+    },
+    {
+      "slug": "second-post",
+      "title": "2番目のブログ投稿",
+      "date": "2024-01-02",
+      "category": "カテゴリー 2",
+      "featuredImage": "/path/to/image2.jpg", 
+      "excerpt": "これは2番目のブログ投稿の簡単な概要です。",
+      "content": "<p>これは2番目のブログ投稿の内容です。</p>"
+    }
   ]
 }

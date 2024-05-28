@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import blogPosts from './blogData';
 import './index.scss';  // Adjust the path based on your project structure
 
-const BlogIndex = () => {
+const BlogIndex = ({ blogInfo, sharedData }) => {
   return (
     <section id="blog" className="blog-section">
       <div className="container">
@@ -19,7 +18,7 @@ const BlogIndex = () => {
         <div className="row center mx-auto mb-5">
           <div className="col-md-8 center">
             <ul className="blog-list">
-              {blogPosts.map(post => (
+              {blogInfo.map(post => (
                 <li className="blog-list-item" key={post.slug}>
                   <Link to={`/blog/${post.slug}`} className="blog-link">
                     <div className="blog-post-preview">
