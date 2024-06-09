@@ -39,7 +39,8 @@ class Header extends Component {
     );
 
     return (
-      <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
+      <header id="home" style={{ height: window.innerHeight - 140, display: 'block', position: 'relative' }}>
+        
         <Navbar bg="primary" variant="dark" expand="lg" fixed="top">
           <div className="container">
             <Navbar.Brand as={Link} to="/">Tatsuhiro Terada</Navbar.Brand>
@@ -50,13 +51,18 @@ class Header extends Component {
                 <Nav.Link as={Link} to="/#portfolio">Projects</Nav.Link>
                 <Nav.Link as={Link} to="/#skills">Skills</Nav.Link>
                 <Nav.Link as={Link} to="/#resume">Experience</Nav.Link>
-                <Nav.Link as={Link} to="/blog/#blog-section">Blog</Nav.Link>
+                <Nav.Link as={Link} to="/blog/#blog">Blog</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </div>
         </Navbar>
 
-        <div className="row aligner" style={{ height: '100%' }}>
+        <div id="started-video-bg" className="video-bg media-bg jarallax-video video-mobile-bg" data-jarallax-video="https://youtu.be/S4L8T2kFFck" data-mobile-preview="images/started_image_p.jpg" data-volume={100}>
+          <div className="video-bg-mask" />
+          <div className="video-bg-texture" id="grained_container" />
+        </div>
+
+        <div className="row aligner" style={{ height: '100%', position: 'relative', zIndex: 1 }}>
           <div className="col-md-12">
             <div>
               <span className="iconify header-icon" data-icon="fa:ship" data-inline="false"></span>

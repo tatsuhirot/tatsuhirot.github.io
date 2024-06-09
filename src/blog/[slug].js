@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import './index.scss';  // Adjust the path based on your project structure
+import '../App.scss';  // Adjust the path based on your project structure
 
 const BlogPost = ({ blogInfo=[], sharedData=[] }) => {
   let { slug } = useParams();
@@ -11,16 +11,20 @@ const BlogPost = ({ blogInfo=[], sharedData=[] }) => {
     return <div>Post not found</div>;
   }
 
+  
+
   return (
-    <div className="blog-post-container">
-      <div className="blog-post text-center mb-4">
-        <h1>{post.title}</h1>
-        <p>{post.date}</p>
-        <p>{post.category}</p>
-        {post.featuredImage && <img src={post.featuredImage} alt={post.title} />}
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+    <section id="blog" className="blog-section">
+      <div className="container">
+        <div className="blog-post text-center mb-4">
+          <h1>{post.title}</h1>
+          <p>{post.date}</p>
+          <p>{post.category}</p>
+          {post.featuredImage && <img src={post.featuredImage} alt={post.title} />}
+          <div dangerouslySetInnerHTML={{ __html: post.content }} />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './index.scss';  // Adjust the path based on your project structure
-
+// import './index.scss';  // Adjust the path based on your project structure
+import "../App.scss";
 const BlogIndex = ({ blogInfo=[], sharedData=[] }) => {
   return (
     <section id="blog" className="blog-section">
@@ -9,11 +9,7 @@ const BlogIndex = ({ blogInfo=[], sharedData=[] }) => {
         <div className="col-md-12 text-center mb-4">
           <h1 className="blog-title">
             <span>Blog</span>
-          </h1>
-          <p className="blog-description">
-            Welcome to our blog! Here, you'll find the latest updates, articles, and insights from our team.
-            Stay tuned for more exciting content.
-          </p>
+          </h1>         
         </div>
         <div className="row center mx-auto mb-5">
           <div className="col-md-8 center">
@@ -25,9 +21,10 @@ const BlogIndex = ({ blogInfo=[], sharedData=[] }) => {
                       <img src={post.featuredImage} alt={post.title} className="blog-post-image" />
                       <div className="blog-post-info">
                         <h2>{post.title}</h2>
-                        <p className="blog-post-date">{post.date}</p>
-                        <p className="blog-post-category">{post.category}</p>
+                        <p className="blog-post-date">Posted Date: {post.date}</p>
+                        <p className="blog-post-category">Category: {post.category}</p>
                         <p className="blog-post-excerpt">{post.excerpt}</p>
+                        
                       </div>
                     </div>
                   </Link>

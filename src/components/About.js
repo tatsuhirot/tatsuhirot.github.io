@@ -78,8 +78,10 @@ class About extends Component {
             </div>
             <div className="row center mx-auto">
             <a
-              href="path/to/your/resume.pdf"
+              href="https://drive.google.com/drive/folders/11WnDfqnb2I-0ZystaRqU_vZNNZ7Z4mTT?usp=drive_link"
               className="btn btn-primary download-resume-btn"
+              target="_blank"
+              rel="noopener noreferrer"
               download
             >
               Download Resume
