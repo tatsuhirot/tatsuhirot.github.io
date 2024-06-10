@@ -93,7 +93,7 @@ class App extends Component {
     const { resumeData, sharedData, language } = this.state;
 
     return (
-      <Router basename="/react-portfolio">
+      <Router>
         <div>
           <Header sharedData={sharedData.basic_info} />
           <div className="col-md-12 mx-auto text-center language">
@@ -108,8 +108,8 @@ class App extends Component {
             </div>
           </div>
           <Routes>
-            <Route path="/react-portfolio" element={<MainPage resumeData={resumeData} sharedData={sharedData} />} />
-            <Route path="/react-portfolio/blog/*" element={<BlogLayout blogInfo={resumeData.blog} sharedData={sharedData} language={language} />} />
+            <Route path="/" element={<MainPage resumeData={resumeData} sharedData={sharedData} />} />
+            <Route path="/blog/*" element={<BlogLayout blogInfo={resumeData.blog} sharedData={sharedData} language={language} />} />
           </Routes>
           <Footer sharedBasicInfo={sharedData.basic_info} />
         </div>
