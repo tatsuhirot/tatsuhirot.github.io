@@ -108,8 +108,8 @@ class App extends Component {
             </div>
           </div>
           <Routes>
-            <Route path="/" element={<MainPage resumeData={resumeData} sharedData={sharedData} />} />
-            <Route path="/blog/*" element={<BlogLayout blogInfo={resumeData.blog} sharedData={sharedData} language={language} />} />
+            <Route path="/react-portfolio" element={<MainPage resumeData={resumeData} sharedData={sharedData} />} />
+            <Route path="/react-portfolio/blog/*" element={<BlogLayout blogInfo={resumeData.blog} sharedData={sharedData} language={language} />} />
           </Routes>
           <Footer sharedBasicInfo={sharedData.basic_info} />
         </div>
