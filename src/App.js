@@ -93,7 +93,7 @@ class App extends Component {
     const { resumeData, sharedData, language } = this.state;
 
     return (
-      <Router>
+      <Router basename="/react-portfolio">
         <div>
           <Header sharedData={sharedData.basic_info} />
           <div className="col-md-12 mx-auto text-center language">
