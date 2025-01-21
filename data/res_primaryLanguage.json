@@ -17,12 +17,104 @@
   },
   "projects": [
     {
+      "title": "Initial Configuration of System Devices",
+      "startDate": "2024",
+      "description": "Performed initial setup and operational checks of monitoring communication devices before shipment. Designed and implemented testing processes to ensure all functions operated correctly. Verified communication connections with other devices and tested data transmission and reception via the internet. Protocols like TCP/IP and HTTP were employed to ensure seamless communication between devices.",
+      "images": [
+        "images/portfolio/07_system-device-configuration/p1.jpg",
+        "images/portfolio/07_system-device-configuration/p2.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-apache-plain",
+          "name": "Apache"
+        },
+        {
+          "class": "devicon-java-plain",
+          "name": "Java"
+        }
+      ]
+    },
+    {
+      "title": "Maintenance of System",
+      "startDate": "2024",
+      "description": "Addressed issues occurring during customer operations and ensured quick problem resolution. Contributed to improving device stability through maintenance and operations. Examples include solving network connection problems and addressing challenges related to firmware updates.",
+      "images": [
+        "images/portfolio/06_maintenance-system-operation/p1.jpg",
+        "images/portfolio/06_maintenance-system-operation/p2.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-apache-plain",
+          "name": "Apache"
+        },
+        {
+          "class": "devicon-java-plain",
+          "name": "Java"
+        }
+      ]
+    },
+    {
+      "title": "Integration with Third-Party Systems",
+      "startDate": "2024",
+      "description": "Developed new features to enable integration with third-party devices. Conducted protocol analysis and data format adjustments, implementing solutions for seamless data exchange.",
+      "images": [
+        "images/portfolio/05_integration-system-develop/p1.jpg",
+        "images/portfolio/05_integration-system-develop/p2.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-apache-plain",
+          "name": "Apache"
+        },
+        {
+          "class": "devicon-java-plain",
+          "name": "Java"
+        }
+      ]
+    },
+    {
+      "title": "Process Management for New System",
+      "startDate": "2024",
+      "description": "Managed processes for new installations of monitoring communication devices. Achieved smooth implementation through schedule adjustments and coordination with external parties. Utilized progress management tools to efficiently advance the project.",
+      "images": [
+        "images/portfolio/04_project-manage-system/p1.jpg",
+        "images/portfolio/04_project-manage-system/p2.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-visualbasic-plain",
+          "name": "VBA"
+        }
+      ]
+    },
+    {
       "title": "Ship-Rolling Control",
       "startDate": "2024",
       "description": "This study uses a Double-Deep Q-Network (DDQN) algorithm to control ship speed and reduce parametric resonance risk under regular waves. Parametric rolling occurs when the pitch-roll frequency ratio is about 2:1. Using a 2DOF model, the study examines nonlinear pitch-roll coupling in head seas. The DDQN algorithm, trained on simulation data, effectively identifies high-risk scenarios and adjusts speed to mitigate parametric resonance, enhancing ship stability and safety in maritime navigation.",
       "images": [
-        "images/portfolio/ship-rolling-control/p1.jpg",
-        "images/portfolio/ship-rolling-control/p2.jpg"
+        "images/portfolio/03_ship-rolling-control/p1.jpg",
+        "images/portfolio/03_ship-rolling-control/p2.jpg"
       ],
       "url": "../blog/ship-rolling-control",
       "technologies": [
@@ -45,8 +137,8 @@
       "startDate": "2023",
       "description": "This is a data analysis project that evaluates CO2 emissions by CII (Carbon Intensity Indicator) rates for different years. The project addresses the growing demand for decarbonization by analyzing trends and patterns in carbon emissions, aiming to provide insights that support efforts to reduce greenhouse gas emissions and promote sustainable practices.",
       "images": [
-        "images/portfolio/co2-emission-viewer/p1.jpg",
-        "images/portfolio/co2-emission-viewer/p2.jpg"
+        "images/portfolio/02_co2-emission-viewer/p1.jpg",
+        "images/portfolio/02_co2-emission-viewer/p2.jpg"
       ],
       "url": "../blog/co2-emission-viewer",
       "technologies": [
@@ -61,8 +153,8 @@
       "startDate": "2022",
       "description": "Catching amount of fish is an important aspect of fishing industry and highly influenced by various factors such as species, location, time, ship's velocity and so on. The goal of this project is to analyze fishing catch data to identify trends and patterns in the data. The data is collected from a fishing vessel and includes information such as species, amount, date, and location.",
       "images": [
-        "images/portfolio/fishing-catch-viewer/p1.jpg",
-        "images/portfolio/fishing-catch-viewer/p2.jpg"
+        "images/portfolio/01_fishing-catch-viewer/p1.jpg",
+        "images/portfolio/01_fishing-catch-viewer/p2.jpg"
       ],
       "url": "../blog/fishing-data-analysis",
       "technologies": [
@@ -161,7 +253,7 @@
       "title": "Ship Pitch-Roll Control by DDQN",
       "date": "2023-04-01",
       "category": "Reinforcement Learning",
-      "featuredImage": "../images/portfolio/ship-rolling-control/p1.jpg",
+      "featuredImage": "../images/portfolio/03_ship-rolling-control/p1.jpg",
       "excerpt": "This study uses a Double-Deep Q-Network (DDQN) algorithm to control ship speed and reduce parametric resonance risk under regular waves. Parametric rolling occurs when the pitch-roll frequency ratio is about 2:1. Using a 2DOF model, the study examines nonlinear pitch-roll coupling in head seas. The DDQN algorithm, trained on simulation data, effectively identifies high-risk scenarios and adjusts speed to mitigate parametric resonance, enhancing ship stability and safety in maritime navigation.",
       "content": "<h1>Objective of This Study</h1><p>The objective of this study is to investigate the phenomenon of parametric rolling in ships, which occurs in rough seas and leads to unstable rolling motion. The study aims to analyze the conditions that induce parametric rolling and explore methods to mitigate the risks associated with this phenomenon, particularly through ship speed control and deep reinforcement learning algorithms.</p><h1>Introduction</h1><p>The prevention of capsizing accidents has been a subject of research for many years due to its importance in ensuring safe navigation. This thesis investigates the phenomenon of 'parametric rolling', which ships encounter in rough seas. This phenomenon, caused by head or following seas, leads to unstable rolling motion that increases over time and can significantly impact the stability of a vessel.</p><p>Parametric rolling has been known since the 1960s and initially attracted attention mainly as a problem for small ships in following seas. However, in recent years, it has been recognized as a significant issue for large container ships, especially in head seas. The IMO has highlighted the importance of addressing this issue and established evaluation criteria in the Interim Guidelines on the Second Generation Intact Stability Criteria - MSC.1/Circ.1627.</p><h1>Method</h1><p>The study employs a combination of simulations and deep reinforcement learning algorithms to analyze parametric rolling. The ship's pitch and roll equations are used to simulate the motion under different conditions. Key parameters such as ship length, breadth, depth, natural angular frequencies, wave excitation amplitudes, and damping coefficients are considered.</p><p>Simulations are conducted using the fourth-order Runge-Kutta method to obtain time series changes in pitch and roll amplitudes. The study also explores the use of Deep Q-Network (DQN) algorithms to control ship speed and mitigate the risk of parametric rolling by altering the wave encounter period.</p>  <h1>Result</h1><p>The simulations confirm that parametric rolling occurs under specific conditions, consistent with prior research. Introducing a ship speed control model reduces the risk of parametric rolling. The policy obtained through the Double Deep Q-Network (DDQN) algorithm accurately predicts the occurrence of parametric rolling and controls the ship speed appropriately, reducing the associated risks.</p><p>Adjusting the trade-off between ship speed and motion through the reward function settings in DDQN learning allows for flexible threshold changes, demonstrating the effectiveness of the approach.</p><h1>Conclusion</h1><p>This study verifies the conditions and risks of parametric rolling through simulations and demonstrates the validity of applying deep reinforcement learning. The key insights gained include:</p><ul><li>Introducing a ship speed control model effectively reduces the risk of parametric rolling.</li><li>The DDQN algorithm accurately predicts and mitigates parametric rolling by controlling ship speed.</li><li>Adjusting the reward function settings in DDQN allows for flexible threshold changes, enhancing the algorithm's effectiveness.</li></ul><p>Overall, this study provides valuable insights into the mitigation of parametric rolling risks and highlights the potential of deep reinforcement learning in enhancing maritime safety.</p><h1>Resource</h1><p>Original Link (Japanese): <a href='https://oacis.repo.nii.ac.jp/records/2000162' target='_blank'>Master's Thesis</a></p>"
     },  
@@ -170,7 +262,7 @@
       "title": "CO2 Emission Evaluation by CII",
       "date": "2023-04-01",
       "category": "Data analysis",
-      "featuredImage": "../images/portfolio/co2-emission-viewer/p1.jpg",
+      "featuredImage": "../images/portfolio/02_co2-emission-viewer/p1.jpg",
       "excerpt": "This is a data analysis project that evaluates CO2 emissions by CII (Carbon Intensity Indicator) rates for different years. The project addresses the growing demand for decarbonization by analyzing trends and patterns in carbon emissions, aiming to provide insights that support efforts to reduce greenhouse gas emissions and promote sustainable practices.",
       "content": "<h1>Overview</h1><p>The purpose of this project is to analyze CO2 emissions using the Carbon Intensity Indicator (CII) rates over multiple years. This analysis is crucial for understanding the progress and effectiveness of decarbonization efforts. By evaluating these trends, the project aims to identify key areas for improvement and strategies to promote sustainable practices.</p><h1>Background</h1><p>With the increasing global focus on reducing greenhouse gas emissions, the maritime industry is under significant pressure to decarbonize. The Carbon Intensity Indicator (CII) is a metric used to assess the carbon emissions of ships relative to the cargo they transport and the distance traveled. Monitoring and analyzing CII rates can provide valuable insights into the effectiveness of various decarbonization strategies and help guide future efforts.</p><h1>Method</h1><p>The project employs a comprehensive data analysis approach to evaluate CO2 emissions using CII rates. The steps involved include:</p><ul><li><strong>Data Collection</strong>: Gathering historical CO2 emissions data and CII rates for different ships and years.</li><li><strong>Data Processing</strong>: Cleaning and organizing the data to ensure accuracy and consistency.</li><li><strong>Statistical Analysis</strong>: Using statistical methods to identify trends and patterns in the data.</li><li><strong>Visualization</strong>: Creating charts and graphs to visually represent the findings.</li><li><strong>Interpretation</strong>: Interpreting the results to draw meaningful conclusions and provide recommendations.</li></ul><h1>Result</h1><p>The analysis of the CO2 emissions data revealed several key findings:</p><ul><li>CII rates have shown a general decreasing trend over the years, indicating progress in decarbonization efforts.</li><li>There are significant variations in CII rates between different types of ships and regions, highlighting the need for targeted strategies.</li></ul><h1>Conclusion</h1><p>The findings from this project underscore the importance of continuous monitoring and analysis of CO2 emissions using CII rates. While there has been progress in reducing carbon emissions, there is still considerable work to be done. The insights gained from this analysis can inform policy decisions and guide future decarbonization efforts. Continued research and innovation are essential to achieving sustainable practices and minimizing the maritime industry's environmental impact.</p><h1>Data Visualization</h1><p>Dashboard Link: <a href='https://tatsuhiro-portfolio.streamlit.app/CO2_Emission_Viewer' target='_blank'>CO2 Emission Viewer</a></p>"
     },
@@ -179,7 +271,7 @@
       "title": "Fishing Data Analysis: Undergraduate Thesis Project",
       "date": "2022-03-01",
       "category": "Data analysis",
-      "featuredImage": "../images/portfolio/fishing-catch-viewer/p1.jpg",
+      "featuredImage": "../images/portfolio/01_fishing-catch-viewer/p1.jpg",
       "excerpt": "Catching amount of fish is an important aspect of fishing industry and highly influenced by various factors such as species, location, time, ship's velocity and so on. The goal of this project is to analyze fishing catch data to identify trends and patterns in the data. The data is collected from a fishing vessel and includes information such as species, amount, date, and location.",
       "content": "<h1>Objective of the Project</h1><p>Catching the amount of fish is an important aspect of the fishing industry and is highly influenced by various factors such as species, location, time, ship's velocity, and so on. The goal of this project is to analyze fishing catch data to identify trends and patterns in the data. The data is collected from a fishing vessel and includes information such as species, amount, date, and location.</p><h1>Introduction</h1><p>The fishing industry plays a critical role in global food security and economy, providing a primary source of protein for millions of people worldwide. Understanding the factors that affect fish catch rates is essential for optimizing fishing efforts, ensuring sustainable practices, and maximizing yields. This project aims to delve into the data collected from fishing vessels to uncover insights into how various factors such as species, location, time, and ship's velocity influence the quantity of fish caught. By identifying these trends and patterns, we can contribute to more efficient and sustainable fishing practices.</p><h1>Method</h1><p>To achieve the objective of this project, we utilized data collected from monitoring devices installed on fishing vessels. These devices recorded detailed information about each fishing trip, including:</p><ul><li><strong>Species</strong>: The type of fish caught.</li><li><strong>Amount</strong>: The quantity of fish caught, measured in kilograms.</li><li><strong>Date</strong>: The specific date and time when the fishing activity took place.</li><li><strong>Location</strong>: The geographical coordinates where the fishing occurred.</li><li><strong>Ship's Velocity</strong>: The speed of the vessel during the fishing activity.</li></ul><p>The data was stored in a structured format, allowing for comprehensive analysis. We employed various data analysis techniques, including statistical analysis and data visualization, to identify significant patterns and correlations in the data. Additionally, we considered environmental factors such as tides and currents to understand their impact on fishing success.</p><h1>Results</h1><p>The amount of fish caught is significantly influenced by both the tide and the speed of the vessel. When the vessel heads into the tide, catch rates often decrease compared to when the vessel follows the tide. Similarly, the vessel's speed plays a crucial role, with optimal speed ranges identified that maximize catch rates. Speeds that are too slow or too fast generally result in lower catches.</p><p>Different fish species respond differently to the environmental conditions of tides and vessel speed. Some species are more abundant when the vessel follows the tide, while others might be caught in greater numbers when heading into the tide. The speed of the vessel also affects species differently, emphasizing the need for species-specific fishing strategies.</p><h1>Conclusion</h1><p>The findings from this project underscore the importance of considering various factors that influence fishing success. By understanding the impact of tides, vessel speed, and species-specific behaviors on catch rates, fishing operations can be optimized to improve efficiency and yield. These insights can help fishermen make informed decisions, leading to more sustainable fishing practices and better resource management. Further research and continuous monitoring are recommended to refine these findings and adapt to changing environmental conditions.</p><p>This project demonstrates the value of data analysis in the fishing industry, providing a foundation for future studies and technological advancements aimed at enhancing fishing productivity and sustainability.</p><h1>Data Visualization</h1><p>Dashboard Link: <a href='https://tatsuhiro-portfolio.streamlit.app/Fishing_Catch_Viewer' target='_blank'>Fishing Catch Data Analysis</a></p>"
     }

@@ -29,6 +29,36 @@
     ],
     "icons": [
       {
+        "name": "Network Design",
+        "class": "fas fa-wifi",
+        "level": "70",
+        "category": "knowledge"
+      },
+      {
+        "name": "Data Management",
+        "class": "fas fa-database",
+        "level": "70",
+        "category": "knowledge"
+      },
+      {
+        "name": "Project Management",
+        "class": "fas fa-calendar",
+        "level": "70",
+        "category": "knowledge"
+      },
+      {
+        "name": "Hardware Engineering",
+        "class": "fas fa-laptop",
+        "level": "70",
+        "category": "knowledge"
+      },
+      {
+        "name": "Cyber Security",
+        "class": "fas fa-shield ",
+        "level": "70",
+        "category": "knowledge"
+      },
+      {
         "name": "Ship Navigation",
         "class": "fas fa-anchor",
         "level": "70",
