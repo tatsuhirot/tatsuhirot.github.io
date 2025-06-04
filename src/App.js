@@ -52,7 +52,10 @@ class App extends Component {
     } else if (pickedLanguage === window.$tertiaryLanguage) {
       pickedLangIconId = window.$tertiaryLanguageIconId;
     }
-    document.getElementById(pickedLangIconId).style.filter = "brightness(100%)";
+    const elem = document.getElementById(pickedLangIconId);
+    if (elem) {
+      elem.style.filter = "brightness(100%)";
+    }
   }
 
   componentDidMount() {
